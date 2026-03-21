@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>The Vital Pulse of Africa</title>
-
   <style>
     body {
       margin: 0;
@@ -25,61 +24,99 @@
     }
 
     .hero {
-      background: #1a73e8;
+      background: url('https://images.unsplash.com/photo-1544033521-8d159238be8e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
       color: white;
       text-align: center;
-      padding: 50px 20px;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 42px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     }
 
     .container {
       max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     .card {
       background: white;
-      padding: 20px;
+      padding: 25px;
       border-radius: 12px;
-      margin-top: 20px;
+      margin-top: 25px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
-    img {
+    .card img {
       width: 100%;
       border-radius: 10px;
-      margin-top: 20px;
+      margin-top: 15px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #1a73e8;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="issues.html">Issues</a>
-  <a href="solutions.html">Solutions</a>
-</nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="issues.html">Issues</a>
+    <a href="solutions.html">Solutions</a>
+  </nav>
 
-<div class="hero">
-  <h1>The Vital Pulse of Africa</h1>
-  <p>Impact for the Future</p>
-  <p>Discover the triumphs, challenges, and vibrant daily life that shape the African continent.</p>
-</div>
-
-<div class="container">
-
-  <img src="https://images.unsplash.com/photo-1518544887877-6d5a7a1d1c6b">
-
-  <div class="card">
-    <h2>About This Website</h2>
-    <p>
-      This platform raises awareness about key issues affecting Africa while highlighting solutions
-      and ways people can help create meaningful change.
-    </p>
+  <!-- Hero / Mission -->
+  <div class="hero">
+    <h1>The Vital Pulse of Africa</h1>
+    <p>Our mission is to raise awareness about the challenges and triumphs across Africa and highlight actionable solutions that can make a real difference in communities.</p>
   </div>
 
-</div>
+  <div class="container">
+
+    <!-- About Us -->
+    <div class="card">
+      <h2>About Us</h2>
+      <img src="https://images.unsplash.com/photo-1560023090-1e1c03d62f1f?auto=format&fit=crop&w=1200&q=80" alt="Market in Africa">
+      <p>The Vital Pulse of Africa is an initiative dedicated to informing people worldwide about key issues affecting African communities. We combine research, storytelling, and real-world data to highlight both challenges and opportunities for growth.</p>
+    </div>
+
+    <!-- Why This is Needed -->
+    <div class="card">
+      <h2>Why This Matters</h2>
+      <img src="https://images.unsplash.com/photo-1550507990-76057f3f46c3?auto=format&fit=crop&w=1200&q=80" alt="Desert in North Africa">
+      <p>Africa faces complex issues such as climate change, healthcare access, hunger, and corruption. Many people are unaware of the daily realities and the actionable solutions available. Our goal is to educate, inspire action, and connect people to meaningful ways they can help.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="card">
+      <h2>Contact Us</h2>
+      <img src="https://images.unsplash.com/photo-1507120878967-3a23b5ecf7cd?auto=format&fit=crop&w=1200&q=80" alt="African landscape">
+      <p>If you would like to learn more, collaborate, or support our mission, reach out via email:</p>
+      <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </div>
+
+  </div>
 
 </body>
 </html>
