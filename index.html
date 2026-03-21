@@ -3,86 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <title>The Vital Pulse of Africa</title>
-  <!-- Favicon -->
-  <link rel="icon" href="ghana-flag.png" type="image/png">
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f6f8; }
-    nav { background: #1a73e8; padding: 15px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+  <link rel="icon" href="ghana-flag.png">
 
-    /* Hero with Ghana landscape */
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    nav {
+      background: #1a73e8;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* HERO */
     .hero {
       position: relative;
       background: url('https://images.unsplash.com/photo-1611851673323-73a9ff30d0b2?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
       color: white;
       text-align: center;
-      padding: 80px 20px;
+      padding: 100px 20px;
     }
+
     .hero::after {
       content: "";
       position: absolute;
-      top:0; left:0; bottom:0; right:0;
-      background-color: rgba(0,0,0,0.5);
-      z-index: 1;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.55);
     }
-    .hero-content { position: relative; z-index:2; max-width:700px; margin:0 auto; }
-    .hero h1 { margin:0; font-size:42px; }
-    .hero p { margin-top:15px; font-size:20px; }
 
-    .container { max-width:900px; margin:40px auto; padding:0 20px; }
-    .card { background:white; padding:25px; border-radius:12px; margin-top:25px; box-shadow:0 4px 10px rgba(0,0,0,0.08); position:relative; }
-    .card img { width:100%; border-radius:10px; margin-top:15px; }
-    .card h2 { margin-top:0; color:#1a73e8; }
-    .button { display:inline-block; margin-top:15px; padding:10px 20px; background-color:#1a73e8; color:white; border-radius:6px; text-decoration:none; font-weight:bold; transition:background 0.3s; }
-    .button:hover { background-color:#155ab6; }
-    a { color:#1a73e8; text-decoration:none; }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+
+    .hero-btn {
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #1a73e8;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    h2 {
+      color: #1a73e8;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #1a73e8;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* STATS */
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .stat {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .stat span {
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    a {
+      color: #1a73e8;
+    }
+
   </style>
 </head>
+
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="issues.html">Issues</a>
-    <a href="solutions.html">Solutions</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="issues.html">Issues</a>
+  <a href="solutions.html">Solutions</a>
+</nav>
 
-  <!-- Hero / Mission -->
-  <div class="hero">
-    <div class="hero-content">
-      <h1>The Vital Pulse of Africa</h1>
-      <p>Our mission is to raise awareness about the challenges and triumphs across Africa and highlight actionable solutions that can make a real difference in communities.</p>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>The Vital Pulse of Africa</h1>
+    <p>
+      Empowering awareness, inspiring action, and driving change across the African continent.
+    </p>
+    <a class="hero-btn" href="issues.html">Explore Issues</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ABOUT -->
+  <div class="card">
+    <h2>Our Mission</h2>
+    <p>
+      The Vital Pulse of Africa is dedicated to raising awareness about critical challenges across Africa while highlighting real, actionable solutions. Our goal is to educate, inspire, and mobilize individuals to contribute to meaningful change.
+    </p>
+  </div>
+
+  <!-- STATS -->
+  <div class="card">
+    <h2>Why This Matters</h2>
+    <div class="stats">
+      <div class="stat">278M<span>People facing hunger</span></div>
+      <div class="stat">50%+<span>Lack healthcare access</span></div>
+      <div class="stat">60%<span>Depend on agriculture</span></div>
     </div>
   </div>
 
-  <div class="container">
-
-    <!-- About Us -->
-    <div class="card">
-      <h2>About Us</h2>
-      <img src="https://images.unsplash.com/photo-1559251168-1e7c93a3b68d?auto=format&fit=crop&w=1200&q=80" alt="Market in Ghana">
-      <p>The Vital Pulse of Africa is an initiative dedicated to informing people worldwide about key issues affecting African communities. We combine research, storytelling, and real-world data to highlight both challenges and opportunities for growth.</p>
-      <a class="button" href="issues.html">Learn More</a>
-    </div>
-
-    <!-- Why This is Needed -->
-    <div class="card">
-      <h2>Why This Matters</h2>
-      <img src="https://images.unsplash.com/photo-1611851567045-2e3fca1c7d8a?auto=format&fit=crop&w=1200&q=80" alt="Desert in North Africa">
-      <p>Africa faces complex issues such as climate change, healthcare access, hunger, and corruption. Many people are unaware of the daily realities and the actionable solutions available. Our goal is to educate, inspire action, and connect people to meaningful ways they can help.</p>
-      <a class="button" href="solutions.html">Learn More</a>
-    </div>
-
-    <!-- Contact -->
-    <div class="card">
-      <h2>Contact Us</h2>
-      <img src="https://images.unsplash.com/photo-1507120878967-3a23b5ecf7cd?auto=format&fit=crop&w=1200&q=80" alt="African landscape">
-      <p>If you would like to learn more, collaborate, or support our mission, reach out via email:</p>
-      <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    </div>
-
+  <!-- ABOUT US -->
+  <div class="card">
+    <h2>About Us</h2>
+    <img src="https://images.unsplash.com/photo-1559251168-1e7c93a3b68d?auto=format&fit=crop&w=1200&q=80">
+    <p>
+      This initiative combines research, storytelling, and global awareness to present a deeper understanding of Africa’s realities. It focuses not only on challenges but also on resilience, growth, and opportunity.
+    </p>
+    <a class="button" href="issues.html">Learn More</a>
   </div>
+
+  <!-- ACTION -->
+  <div class="card">
+    <h2>Take Action</h2>
+    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80">
+    <p>
+      Change begins with awareness. By learning, sharing, and supporting initiatives, individuals can contribute to sustainable progress across communities.
+    </p>
+    <a class="button" href="solutions.html">View Solutions</a>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+  </div>
+
+</div>
 
 </body>
 </html>
+
     
