@@ -3,110 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <title>The Vital Pulse of Africa</title>
+  <!-- Favicon -->
+  <link rel="icon" href="ghana-flag.png" type="image/png">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
-    }
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f6f8; }
+    nav { background: #1a73e8; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
 
-    nav {
-      background: #1a73e8;
-      padding: 15px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    /* Hero with overlay */
+    /* Hero with Ghana landscape */
     .hero {
       position: relative;
-      background: url('https://images.unsplash.com/photo-1544033521-8d159238be8e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1611851673323-73a9ff30d0b2?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 80px 20px;
     }
-
     .hero::after {
       content: "";
       position: absolute;
-      top: 0; left: 0; bottom: 0; right: 0;
+      top:0; left:0; bottom:0; right:0;
       background-color: rgba(0,0,0,0.5);
       z-index: 1;
     }
+    .hero-content { position: relative; z-index:2; max-width:700px; margin:0 auto; }
+    .hero h1 { margin:0; font-size:42px; }
+    .hero p { margin-top:15px; font-size:20px; }
 
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .hero h1 {
-      margin: 0;
-      font-size: 42px;
-    }
-
-    .hero p {
-      margin-top: 15px;
-      font-size: 20px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      margin-top: 25px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      position: relative;
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-top: 15px;
-    }
-
-    .card h2 {
-      margin-top: 0;
-      color: #1a73e8;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #1a73e8;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .button:hover {
-      background-color: #155ab6;
-    }
-
-    a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
-
+    .container { max-width:900px; margin:40px auto; padding:0 20px; }
+    .card { background:white; padding:25px; border-radius:12px; margin-top:25px; box-shadow:0 4px 10px rgba(0,0,0,0.08); position:relative; }
+    .card img { width:100%; border-radius:10px; margin-top:15px; }
+    .card h2 { margin-top:0; color:#1a73e8; }
+    .button { display:inline-block; margin-top:15px; padding:10px 20px; background-color:#1a73e8; color:white; border-radius:6px; text-decoration:none; font-weight:bold; transition:background 0.3s; }
+    .button:hover { background-color:#155ab6; }
+    a { color:#1a73e8; text-decoration:none; }
   </style>
 </head>
-
 <body>
 
   <!-- Navigation -->
@@ -129,7 +60,7 @@
     <!-- About Us -->
     <div class="card">
       <h2>About Us</h2>
-      <img src="https://images.unsplash.com/photo-1560023090-1e1c03d62f1f?auto=format&fit=crop&w=1200&q=80" alt="Market in Africa">
+      <img src="https://images.unsplash.com/photo-1559251168-1e7c93a3b68d?auto=format&fit=crop&w=1200&q=80" alt="Market in Ghana">
       <p>The Vital Pulse of Africa is an initiative dedicated to informing people worldwide about key issues affecting African communities. We combine research, storytelling, and real-world data to highlight both challenges and opportunities for growth.</p>
       <a class="button" href="issues.html">Learn More</a>
     </div>
@@ -137,7 +68,7 @@
     <!-- Why This is Needed -->
     <div class="card">
       <h2>Why This Matters</h2>
-      <img src="https://images.unsplash.com/photo-1550507990-76057f3f46c3?auto=format&fit=crop&w=1200&q=80" alt="Desert in North Africa">
+      <img src="https://images.unsplash.com/photo-1611851567045-2e3fca1c7d8a?auto=format&fit=crop&w=1200&q=80" alt="Desert in North Africa">
       <p>Africa faces complex issues such as climate change, healthcare access, hunger, and corruption. Many people are unaware of the daily realities and the actionable solutions available. Our goal is to educate, inspire action, and connect people to meaningful ways they can help.</p>
       <a class="button" href="solutions.html">Learn More</a>
     </div>
@@ -154,3 +85,4 @@
 
 </body>
 </html>
+    
